@@ -1,0 +1,361 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block title_canvas %}
+ICCC 2020
+{% endblock %}
+
+{% block content %}
+  <div class="blocks">
+    <h1>About ICCC2020</h1>
+    <p>ICCC2020 ( Intra College Coding Competition 2020 )</p>
+    <p>It was organised on 28 February 2021 , in IBM Lab.</p>
+    <p>Contest Duration : 2 hour.</p>
+    <p>Hosted on Codechef platform.</p>
+    <p>There was six problem based on Data Structure and Algorithm.</p>
+  </div>
+
+
+  <div class="blocks">
+    <h1 style="text-align: center;">Winners</h1><br>
+    <div class="winners">
+      <div>
+        1st Position<br>
+        Vibhor Aggarwal<br>
+        4th year<br>
+        Batch: 2016-2020<br>
+        Score : 360<br>
+      </div>
+      <div>
+        2nd Position<br>
+        Ritik Sharma<br>
+        2nd year<br>
+        Batch: 2018-2022<br>
+        Score : 200<br>
+      </div>
+
+      <div>
+        3rd Position<br>
+        Rahul Daksh<br>
+        1st year<br>
+        Batch: 2017-2021<br>
+        Score : 100<br>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 style="color: white">ICCC 2020 Problems</h1>
+  </div>
+  <!-- Problem 1 -->
+  <div class="blocks">
+    <h3>Problem 1:</h3>
+    <div>
+      <details>
+        <summary>Happy Numbers</summary>
+        <hr class="h_line">
+        <p>Recently, Chef completed a course on Number Theory, now to test his Number Theory Skills. He applied for an
+          online test on Number Theory, He just stuck on a problem and he needs your help. The problem is you are given
+          a
+          number N , you have to tell whether the number is Good or not , a number is said to be Good if square of the
+          number is equal to double of the number.</p>
+        <hr class="h_line" class="h_line">
+        Input:<br>
+        <p>First and only line will contain a single integer N.</p>
+        <hr class="h_line">
+        Output:<br>
+        <p> If N is a Good Number print "HAPPY" (without quotes), otherwise print "NOT HAPPY" (without quotes).</p>
+        <hr class="h_line">
+        Constraints : <br>
+        - 10<sup>4</sup> &le; N &le; 10<sup>4</sup><br>
+        <hr class="h_line">
+        <p>Subtask :</p>
+        <p>100 points : Original Constraints</p>
+        <hr class="h_line">
+        Sample Input:<br>
+        9<br>
+        <hr class="h_line">
+        Sample Output:<br>
+        NOT HAPPY<br>
+        <hr class="h_line">
+
+        <p>
+          EXPLANATION:<br>
+          9*9=81<br>
+          9+9=18<br>
+          81 not equal to 18 so print NOT HAPPY<br>
+        <p>
+          <hr class="h_line">
+      </details>
+
+    </div>
+  </div>
+
+  <div class="blocks">
+    <h3>Problem 2:</h3>
+    <div>
+      <details>
+        <summary>Encrypt</summary>
+        <hr class="h_line">
+        <p>A CBI operation is being going against some cyber criminals , so one of CBI agent named Laiba , wants to send
+          some important reports to his senior officer but she decided to encrypt her message so that anyone can't stole
+          his reports, since it contains very confidential information. Message encryption is done such that the order
+          of
+          each character of the string S is reversed. Since she is busy in doing some other work help her encrypt her
+          message.</p>
+        <hr class="h_line" class="h_line">
+        Input:<br>
+        <p>The first line of the input contains a single integer T denoting the number of test cases. The description of
+          T
+          test cases follows. The first line of each test case contains a single integer N , the length of the string.
+          The
+          second line contains string S(S is only consist of lowercase English letters).</p>
+        <hr class="h_line">
+        Output:<br>
+        <p> For each testcase, output a new string in a new line.</p>
+        <hr class="h_line">
+        Constraints : <br>
+        1 &le; T &le; 50<br>
+        1 &le; N &le; 10<sup>6</sup>
+        <hr class="h_line">
+        <p>Subtask :</p>
+        <p>30 points : 1 &le; N &le; 1000<br>
+          70 points : 1 &le; N &le; 10<sup>6</sup></p>
+        <hr class="h_line">
+        Sample Input:<br>
+        1<br>
+        5<br>
+        akhil<br>
+        <hr class="h_line">
+        Sample Output:<br>
+        zpsro<br>
+        <hr class="h_line">
+
+        <p>
+          EXPLANATION:<br>
+          a=z,k=p,h=s,i=r,l=o.
+        <p>
+          <hr class="h_line">
+      </details>
+    </div>
+  </div>
+
+
+  <!-- Problem 2 -->
+  <div class="blocks">
+    <h3>Problem 3:</h3>
+    <div>
+      <details>
+        <summary>Prime Powder</summary>
+        <hr class="h_line">
+        <p>Today Chef buy N magical coke along with N powder from an online sell.Chef arrange all the coke bottle in a
+          queue,each bottle have written a number on it which denotes energy contained in the coke.Number written on
+          them
+          are L,L+1,L+2,…R-2,R-1,R (In left to right order) .Now before drinking the coke he have to dissolve one powder
+          in each coke,the powder have a property that if the energy contained in the coke is only divisible by 1 and
+          itself then new energy of coke is changed to cube of the original energy otherwise it remain same.Chef wants
+          to
+          find the increment in total energy of all coke after dissolving the powder.Since Chef is a busy person so he
+          needs your help.</p>
+        <hr class="h_line" class="h_line">
+        Input:<br>
+        <p>The first line of the input contains a single integer T denoting the number of test cases. The description of
+          T
+          test cases follows. The first line of each test case contains two integers L and R.</p>
+        <hr class="h_line">
+        Output:<br>
+        <p> For each test case, output energy difference in a single line.</p>
+        <hr class="h_line">
+        Constraints : <br>
+        1 &le; T &le; 100<br>
+        2 &le; L &le; R &le; 10<sup>3</sup>
+        <hr class="h_line">
+        <p>Subtask :</p>
+        <p>100 points : Original Constraints</p>
+        <hr class="h_line">
+        Sample Input:<br>
+        2<br>
+        4 7<br>
+        99 100
+        <hr class="h_line">
+        Sample Output:<br>
+        456<br>
+        0<br>
+        <hr class="h_line">
+
+        <p>
+          EXPLANATION:<br>
+          Test case 1: There are 4 cokes of energy 4,5,6,7. Total energy before dissolving the powder = 22. Total energy
+          after dissolving powder = 478. Difference between previous energy to new energy is 456.
+        <p>
+          <hr class="h_line">
+      </details>
+    </div>
+  </div>
+
+
+
+
+  <div class="blocks">
+    <h3>Problem 4:</h3>
+    <div>
+      <details>
+        <summary>Corona</summary>
+        <hr class="h_line">
+        <p>Recently , novel-coronavirus(nCov) has outbreak in China. It is suppossed to be that this outbreak remains
+          till
+          N days. Scientist are working really hard to find a vaccine for its cure. And they estimated that till (N+1)/2
+          th day they will able to find its vaccine.<br>
+          The infection of virus spread till N/2 days and then after N/2 days its effects start decreasing in the same
+          order in which it increases because of the vaccine. And finally at the end of Nth days all cases are either
+          cured or died. For any i from 0 to N&minus;1: The number of people who newly gets infected on ith and
+          (N&minus;1&minus;i)th day are same and the number of people who died on ith and (N&minus;1&minus;i)th day are
+          also same. Since, Chef is working in health department , he wants to know how many people survived on each
+          day.
+          Help him find the number of people who survived on each day from day 0 to N&minus;1.</p>
+        <hr class="h_line" class="h_line">
+        Input:<br>
+        <p>The first line of the input contains a single integer Tdenoting the number of test cases. The description of
+          T
+          test cases follows. The first line of each test case contains a single integer N. Nis always odd. The second
+          line contains N space-separated integers A1,A2,&period;&period;&period;,AN. The third line contains N
+          space-separated integers B1,B2,&period;&period;&period;,BN.</p>
+        <hr class="h_line">
+        Output:<br>
+        <p> For each testcase , print N space-separated integers denoting no. of infected people from day 1 to N.</p>
+        <hr class="h_line">
+        Constraints : <br>
+        1 &le; T &le; 20<br>
+        1 &le; N &le; 2 &ast; 10<sup>5</sup><br>
+        1 &le; A[i] &le; 10<sup>18</sup><br>
+        1 &le; B[i] &le; 10<sup>18</sup><br>
+        <hr class="h_line">
+        <p>Subtask :</p>
+        <p>30 points : 1 &le; N &le; 10<sup>3</sup><br>
+          70 points : Original Constraints</p>
+        <hr class="h_line">
+        Sample Input:<br>
+        2<br>
+        3<br>
+        6 9 6<br>
+        2 4 2<br>
+        5<br>
+        30 10 20 20 10<br>
+        17 6 22 17 6<br>
+        <hr class="h_line">
+        Sample Output:<br>
+        4 5 4<br>
+        4 3 8 3 4<br>
+        <hr class="h_line">
+
+        <p>
+          EXPLANATION:<br>
+          Test case 1: Since on the first the number of people who get infected and died will be minimum. Survived on
+          day
+          1 is 6-2=4 and on day 2 is 5 and then on day 3 as effect deceases due to vaccine so people who survived is 4 .
+        <p>
+          <hr class="h_line">
+      </details>
+    </div>
+  </div>
+
+
+
+  <div class="blocks">
+    <h3>Problem 5:</h3>
+    <div>
+      <details>
+        <summary>Simple Problem 101</summary>
+        <hr class="h_line">
+        <p>Chef created his own function<br>
+        <pre>F(L,R)=f(L) &ast; f(L+1) &ast; f(L+2)....f(R) ;
+            Where  f(K)  = 1|2|3|4|5|6...|K;
+            for all K greater equal to 0.
+            if a|b denotes bitwise OR of a,b;
+            Chef needs your help to find F(L,R) for given L and R.</pre>
+        <hr class="h_line" class="h_line">
+        Input:<br>
+        <p>First line will contain T, number of testcases. Then the testcases follow.<br>
+          Each testcase contains of a single line of input, two integers L,R.</p>
+        <hr class="h_line">
+        Output:<br>
+        <p> For each test case, output is a single line F(L,R) modulo 1000000007.</p>
+        <hr class="h_line">
+        Constraints : <br>
+        1 &le; T &le; 10<sup>5</sup><br>
+        1 &le; L &le; R &le; 10<sup>9</sup><br>
+        <hr class="h_line">
+        <p>Subtask :</p>
+        <p>30 points : 1 &le; L &le; R &le; 10<sup>3</sup><br>
+          70 points : Original Constraints.</p>
+        <hr class="h_line">
+        Sample Input:<br>
+        2 <br>
+        2 4 <br>
+        5 11<br>
+        <hr class="h_line">
+        Sample Output:<br>
+        63<br>
+        17364375<br>
+        <hr class="h_line">
+        <p>
+          EXPLANATION:<br>
+          Test case 1:F(2,4)=f(2)xf(3)xf(4), f(2)=3,f(3)=3,f(4)=7<br>
+        <p>
+          <hr class="h_line">
+      </details>
+    </div>
+  </div>
+
+
+
+  <div class="blocks">
+    <h3>Problem 6:</h3>
+    <div>
+      <details>
+        <summary>Simple Problem 010</summary>
+        <hr class="h_line">
+        <p>Given an array of integers a1,a2,a3...aN of length N.These integers are PIN code of N cities of
+          ChefLand.There
+          is a two way connecting path between each pairs of city ai and aj (1 &le; i &le; N ,1 &le; j &le; N) if and
+          only
+          if the PIN codes of these pairs of cities are Coprime( ai and aj are Coprime),and length of path would be sum
+          of
+          PIN code(ai + aj).<br>
+
+          Chef wants to go to city c from city a via city b,by covering minimum distance.Find the minimum distance chef
+          needs to travel,Or find chef can not reach city c.</p>
+        <hr class="h_line" class="h_line">
+        Input:<br>
+        <p>The First line contains integer N, Second line contains N space separated integers a1,a2,a3….aN ,Third line
+          contains three space separated integers a,b,c.</p>
+        <hr class="h_line">
+        Output:<br>
+        <p> Print single integer the minimum distance Chef have to travel,Or -1 if chef can not reach city c</p>
+        <hr class="h_line">
+        Constraints : <br>
+        3 &le; N &le; 2 &ast; 10<sup>3</sup><br>
+        2 &le; ai &le; 10<sup>5</sup> ( all ai are pairwise distinct )<br>
+        a,b,c must present in given array<br>
+        <hr class="h_line">
+        Subtask :<br>
+        10 points : 1 &le; N &le; 10<br>
+        90 points : Original Contraints<br>
+        <hr class="h_line">
+        Sample Input:<br>
+        5<br>
+        2 3 7 9 12<br>
+        2 9 3<br>
+        <hr class="h_line">
+        Sample Output:<br>
+        27<br>
+        <hr class="h_line">
+        <p>
+          EXPLANATION:<br>
+          Optimal Path is 2->9->2->3<br>
+        <p>
+          <hr class="h_line">
+      </details>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'navbar.html' %}
+{%load static %}
+
+{% block our_team_CSS %}
+<link href="{% static '/css/our_team.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title_canvas %}
+Our Team Members
+{% endblock %}
+
+    {% block content %}
+
+    <!--   /////////////////////    Amit Section /////////////////////////////////////////////////// -->
+    <div class="amit">
+        <div class="ammit_img abc">
+            <img src="{% static '/images/Amit.jpg' %}" class="faded faded-right" alt="Amit Kumar">
+        </div>
+        <div class="ammit_para">
+            <h2>Amit Kumar</h2>
+            <h3>Programming Lead</h3><br>
+            <p>Branch : Information Technology<br>Year : 4th<br>Codechef : 4 Star<br> Codeforces :
+                Specialist<br>
+                Facebook Hackercup : 2020 - Rank 1600
+            <p style="margin-left: 47%;">2021 - Rank 1309 </p>
+            <p>Clear Google Code Jam Qualification Round 2019,2020,2021</p>
+            Backend Developer<br>
+            </p>
+        </div>
+    </div>
+
+    <!--   /////////////////////    Akhil  Section /////////////////////////////////////////////////// -->
+    <div class="sonu">
+        <div class="sonu_img abc">
+            <img src="{% static '/images/Akhil.jpeg' %}" alt="Akhil Saini">
+        </div>
+        <div class="sonu_para">
+            <h2>Akhil Saini</h2>
+            <h3>Team Lead</h3><br>
+            <p class="pra">
+                Branch : Information Technology<br>Year : 4th<br>
+                Codechef : 5 Star<br>
+                Codeforces : Specialist<br>
+                HackerRank : 6 Star ( Problem Solving )<br>
+                <!--Placed in Infosys as a Power Programmer Role.<br>
+                "If you have taken addmission in an Engineering College then coding should be more important for you
+                <del> than dancing and painting</del> - Akhil Saini."-->
+            </p>
+        </div>
+    </div>
+
+    <!--   /////////////////////    Lalit  section /////////////////////////////////////////////////// -->
+    <div class="amit">
+        <div class="ammit_img abc">
+            <img src="{% static '/images/Lalit.jpg' %}" alt="Lalit Singh Bhojak">
+        </div>
+        <div class="ammit_para">
+            <h2>Lalit Singh Bhojak</h2>
+            <h3>Media Lead</h3><br>
+            Branch : Information Technology<br>Year : 4th<br>
+            Codechef : 3 Star.
+            <br>
+            Web Developer
+            <br>
+            Android Developer
+            <br>
+        </div>
+    </div>
+
+
+    <!--   /////////////////////    Sonu  section /////////////////////////////////////////////////// -->
+
+    <div class="sonu">
+        <div class="sonu_img abc">
+            <img src="{% static '/images/Sonu.jpeg' %}" alt="Sonu Kumar">
+        </div>
+        <div class="sonu_para">
+            <h2>Sonu Bainsla</h2>
+            <h3>Event Lead</h3><br>
+            <p>
+                Branch : Computer Science<br>Year : 4th<br>
+                Founder and CEO of SBG Store.
+                <br>
+                Founder and CEO of SBG Study
+                <br>
+                Founder of NovoCoding.com
+                <br>
+                Vice President of CIIC.
+                <br>
+                Web Developer
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

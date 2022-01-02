@@ -1,0 +1,114 @@
+{% extends 'navbar.html' %}
+{%load static %}
+
+
+{% block title_canvas %}
+Register Yourself for ICCC2022
+{% endblock %}
+
+{% block content %}
+    <div class="page-wrapper bg-gra-02 p-t-303 p-b-100 font-poppins" style="margin:2%">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4" style="box-shadow: 36px 36px 36px rgb(36, 36, 36);">
+                <div class="card-body">
+                    <h2 class="title">Registration Form</h2>
+                    <form action="register" method="POST">
+                        <div class=" row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">First Name *</label>
+                                    <input class="input--style-4" type="text" name="First" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Last Name</label>
+                                    <input class="input--style-4" type="text" name="Last">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Codechef Id *</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4" type="text" name="Codechef_ID" required>
+                                        <!--<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender *</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input type="radio" checked="checked" name="gender" required>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email *</label>
+                                    <input class="input--style-4" type="email" name="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number </label>
+                                    <input class="input--style-4" type="text" name="Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <label class="label">Year *</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="Year" required>
+                                        <option value="">None</option>
+                                        <option>1st Year</option>
+                                        <option>2nd Year</option>
+                                        <option>3rd Year</option>
+                                        <option>4th Year</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <label class="label">Branch</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <input class="input--style-4" type="text" name="Branch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Jquery JS-->
+    <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static '/vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static '/vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static '/vendor/datepicker/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <!-- backghround drawing section  -->
+    <script src="{% static '/js/navbarscript.js' %}"></script>
+    <script src="{% static '/js/global.js' %}"></script>
+    {% endblock %}

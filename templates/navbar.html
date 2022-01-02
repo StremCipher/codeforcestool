@@ -1,0 +1,67 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>CP Comunity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static '/images/favicon.jpeg' %}" rel="icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Icons font CSS-->
+  <link href="{% static '/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+  <link href="{% static '/vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+
+  <!-- Vendo CSS-->
+  <link href="{% static '/vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+  <link href="{% static '/vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+  <!-- Main CSS-->
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+  <link href="{% static '/css/main.css' %}" rel="stylesheet" media="all">
+  {% block our_team_CSS %}{% endblock %}
+  {% block rating_bar %}{% endblock %}
+  {% block dynamic_bar %}{% endblock %}
+</head>
+
+<body class="bg-gra-02" style="background-size: cover;">
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li style="float: left;">
+            <a href="{% url 'index' %}"><img src="{% static '/images/cpclogo.png' %}" class="logo"></a>
+          </li>
+          <li><a id="len1" class="hoverable" href="{% url 'index' %}">ICCC 2021</a></li>
+          <li><a id="len2" class="hoverable" href="{% url 'ourteam' %}">Our Team</a></li>
+          <li><a id="len3" class="hoverable" href="{% url 'register' %}">Register</a></li>
+          <li><a id="len4" class="hoverable" href="{% url 'contactus' %}">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- background drawing section  -->
+  <canvas id="canvas"></canvas>
+  <script src="{% static '/js/script.js' %}"></script>
+
+  <div class="cpcname">
+    <p style="color: white">{% block title_canvas %}{% endblock %}</p>
+  </div>
+  <script src="{% static '/js/navbarscript.js' %}"></script>
+  <script src="{% static '/images/Amit.jpg' %} "></script>
+
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

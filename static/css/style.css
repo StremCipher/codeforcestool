@@ -1,0 +1,272 @@
+/*******************Common Tag********************/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+/*********************Body CSS****************************/
+body 
+{
+  background-image: linear-gradient(to right,#16222A,#3A6073);
+}
+
+/********************End of CSS*************************/
+
+
+/******************* Canvas background and title inside the page *********************/
+canvas {
+  /* background-image: linear-gradient(to right, #0f2027,#203a43,#2c5364 ); */
+  background-image: linear-gradient(to right,#16222A,#3A6073);
+  height: 44vh;
+  width: 100%;
+  margin-top: 4vh;
+  margin-bottom: 10vh;
+}
+
+.cpcname {
+  /* margin: 0; */
+  position:absolute;
+  font-size: 50px;
+  /* color: rgb(219, 213, 213); */
+  top: 40vh;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:768px) {
+  canvas {
+    height: 16vh;
+    margin-top: 4vw;
+    margin-bottom: 10vw;
+  }
+  .cpcname {
+    top: 30vw;
+    font-size: 20px;
+  }
+}
+
+/********************End of this area****************/
+
+
+/*****************ICCC2020 and ICCC2021 Page*****************/
+.blocks {
+  background-color: white;
+  margin: auto;
+  margin-bottom: 6%;
+  font-size: 20px;
+  color: #525252;
+  font-weight: 400;
+  padding: 4%;
+  width: 80%;
+  text-align: justify;
+  border-radius: 16px;
+  box-shadow: 36px 36px 36px rgb(36, 36, 36);
+  
+}
+
+.winners {
+  display: flex;
+  background: #fff;
+}
+
+.winners div {
+  float:left;
+  width: 30%;
+  padding: 2%;
+  border-radius: 18px;
+  box-shadow: 6px 6px 6px rgb(36, 36, 36);
+  margin: 2%;
+}
+
+.h_line {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 4px;
+  background: #666666;
+}
+
+/********************End of this area****************/
+
+
+/************Navbar CSS****************/
+
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  transform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+  color: white;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  text-decoration: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+  color: white;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+  color: white;
+  text-decoration: none;
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+  color: white;
+}
+
+
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+}
+
+
+
+/*everything below here is just setting up the page, so dont worry about it */
+
+
+@media (min-width: 768px) {
+  .navbar{
+    text-align: center !important;
+    float: none;
+    display: inline-block;
+  }
+}
+
+body {
+  background: #212220;
+  font-weight:300;
+  text-align:center !important;
+}
+
+nav {
+  background: none !important;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-transform:uppercase;
+  }
+
+  nav li {
+      list-style: none;
+      margin-left: 3em;
+      margin-right: 3em;
+      float: left;
+  }
+  nav li a {
+        text-decoration: none;
+        font-size: 1.5em;
+        transition: .5s color ease-in-out;
+  }
+
+  /*************End of Navbar******************/
+
+#message {
+  resize:none; 
+  line-height:2; 
+  padding:2% 2%;
+  border-color: white;
+}
+
+
+.logo
+{
+  width:9vw;
+  margin-right: 12vw;
+}
+
+@media screen and (max-width:768px) {
+  .hoverable{
+    font-size: 13px;
+  }
+
+  .nav li {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+  
+  .hoverable {
+    border-bottom: solid 1px white;
+    border-radius: 3px;
+  }
+
+
+  .logo
+  {
+    width:13vw;
+    margin-right: 0vw;
+    padding-bottom: 1vw;
+    border: none;
+  }
+
+  .winners {
+    text-align: center;
+    display: inline-block;
+  }
+  .winners div {
+    width: 90%;
+  }
+  .blocks {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .blocks h1 {
+    font-size: 24px;
+  }
+}
