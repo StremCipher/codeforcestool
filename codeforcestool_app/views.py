@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
+import re 
+
 
 class contest_details():
     "Stores name and place pairs"
@@ -31,7 +34,25 @@ def register(request):
     return render(request,'register.html',{})
 
 def contactus(request):
-    return render(request,'contactus.html',{})
+
+    msg = ''
+    if request.method == 'POST':
+        first = request.POST.get('First')
+        last = request.POST.get('Last')
+        email = request.POST.get('Email')
+        message = request.POST.get('Message')
+        myemail = 'akhilsainiwork@gmail.com'
+
+        if not re.match(r'[^@]+@[^@]+\.[^@]+', email):
+            msg = 'Invalid email address !'
+        else:
+            message = 'Name : '+ first+' '+last +'\nEmail : '+email+'\nMessage : '+message
+            send_mail('Message From Codeforces Tool',message,'',[myemail])
+            msg = 'Your message have been sent successfully. Thank You.'
+
+    return render(request,'contactus.html',{'msg':msg})
+
+
 
 def iccc2020(request):
     return render(request,'iccc2020.html',{})

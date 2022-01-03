@@ -6,12 +6,15 @@ Send your suggestions and queries
 {% endblock %}
 
     {% block content %}
+    
+    <h1 style="color: white;">{{ msg }}</h1>
     <div class="page-wrapper bg-gra-02 p-t-303 p-b-100 font-poppins" style="margin:2%">
         <div class="wrapper wrapper--w680">
             <div class="card card-4" style="box-shadow: 36px 36px 36px rgb(36, 36, 36);">
                 <div class="card-body">
                     <h2 class="title">Contact Us</h2>
-                    <form action="contactus" method="POST">
+                    <form action='' method="POST">
+                        {% csrf_token %}
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
