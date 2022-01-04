@@ -7,6 +7,7 @@ name = "pypi"
 django = "*"
 whitenoise = "*"
 waitress = "*"
+requests = "*"
 
 [dev-packages]
 

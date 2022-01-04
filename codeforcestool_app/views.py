@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 import re 
+import requests
+import json
 
 
 class contest_details():
@@ -14,13 +16,15 @@ class contest_details():
 # Create your views here.
 def index(request):
     
+    response=requests.get("https://flaskapitesting.herokuapp.com/api/1616")
+    print(response.status_code)
+    # print(response.json())
+    ls = response.json()
     lists = []
-    lists.append(contest_details("A",800, 80000//4000))
-    lists.append(contest_details("B",1200, 120000//4000))
-    lists.append(contest_details("C",1800, 180000//4000))
-    lists.append(contest_details("D",2400, 240000//4000))
-    lists.append(contest_details("E",3000, 300000//4000))
-    lists.append(contest_details("F",3600, 360000//4000))
+    for attribute, value in ls.items():
+        varr = value
+        varr = int(float(varr))
+        lists.append(contest_details(attribute,value, (varr)//40))
     context = {
          "problem_name" : ['A','B','C','D','E', 'F', 'G', 'H', 'I', 'J'],
     }
