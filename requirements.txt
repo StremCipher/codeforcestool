@@ -17,9 +17,21 @@
 # waitress==1.4.4
 # whitenoise==5.2.0
 
+# asgiref==3.4.1
+# Django==4.0
+# sqlparse==0.4.2
+# tzdata==2021.5
+# whitenoise==5.3.0
+# waitress==1.4.4
+
 asgiref==3.4.1
-Django==4.0
+certifi==2021.10.8
+charset-normalizer==2.0.9
+Django==4.0.1
+idna==3.3
+requests==2.27.0
 sqlparse==0.4.2
 tzdata==2021.5
-whitenoise==5.3.0
+urllib3==1.26.7
 waitress==1.4.4
+whitenoise==5.3.0
