@@ -1,0 +1,31 @@
+4 Project Approach :
+
+1. Chrome Extension for Notes.
+2. Problem Rating Prediction.
+3. Visualisation of profile.
+4. Custom Rating Prediction.
+
+
+Time : 
+Amit  : Task 2 API Creation : done  
+Lalit : Front end  : not done : to be continue
+Sonu  : Front End  : not done : to be continue
+
+
+Akhil Saini : 
+1. Website : Python.
+   3 days ( 2 Jan - 5 Jan ) : done 
+
+2.  Chrome Extension : Javascript
+	3 days ( 6 Jan - 9 Jan ) 
+
+Deadline : 9 Jan.
+
+
+new task : 7 jan 2021:
+amit : to work on chrome extention
+lalit : visualiser : 
+         1- 10 best contest + strogest and weakest prblem tag a/t these contest
+         2- 10 worst contest + strogest and weakest prblem tag a/t these contest
+         3- user with top reating in least participated contest
+         4- 
