@@ -1,47 +1,15 @@
-{% extends 'navbar.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block rating_bar %}
-<link href="{% static '/css/rating_bar.css' %}" rel="stylesheet">
-{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
+<body>
+    <h1>index page</h1>
+</body>
 
-{% block dynamic_bar %}
-<style>
-
-{% for i in lists %}
-.progress-line.{{i.problem_name}} span::after{
-  content: "{{i.rating}}";
-}
-{% endfor %}
-</style>
-{% endblock %}
-
-
-{% block title_canvas %}
-{{contest_name}}
-{% endblock %}
-
-
-{% block content %}
-
-<!-- <h1>{{name}}</h1> -->
-
-<!-- {% for i in '0123456789'|make_list %}
-<h1>{{ forloop.counter }}</h1>
-{% endfor %} -->
-
-  <div class="skill-bars">
-    
-    {% for i in lists %}
-    <div class="bar">
-      <div class="info">
-        <span>Problem {{i.problem_name}}</span>
-      </div>
-      <div class="progress-line html {{i.problem_name}}">
-        <span style="width: {{i.rating_percent}}%; "></span>
-      </div>
-    </div>
-    {% endfor %}
-
-  {% endblock %}
+</html>

@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT codeforcestool.wsgi:application
+web: gunicorn my_webapp:flask_app --log-file=-
